@@ -5,7 +5,7 @@ const learBtn = document.querySelector('.learnBtn');
 const section1 = document.querySelector('#section1');
 const buttons = document.querySelector('.buttons');
 const infos = document.querySelectorAll('.info');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.nav-link');
 const logo = document.querySelector('.logo');
 const header = document.querySelector('.header');
@@ -16,6 +16,9 @@ const btnLeft = document.querySelector('.btnLeft');
 const btnRight = document.querySelector('.btnRight');
 const dotCont = document.querySelector('.dots');
 const dots = document.querySelectorAll('.dot');
+
+
+
 
 
 //-----------------------------------------------Function
@@ -129,10 +132,13 @@ buttons.addEventListener('click', function (event) {
 nav.addEventListener('click', function (event) {
     event.preventDefault();
     const link = event.target;
-    if (link.classList.contains('nav-link')) {
+    if (link.classList.contains('nav-link') && link.getAttribute('href') != "#") {
         const dest = document.querySelector(link.getAttribute('href'));
         dest.scrollIntoView({ behavior: 'smooth' });
     }
+    // if (link.getAttribute('href') == "#") {
+    //     link.addEventListener('click', openModal);
+    // }
 })
 
 //Making on the hovred link prominent in the navbar (Using Event Delegation )

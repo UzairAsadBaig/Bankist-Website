@@ -11,17 +11,20 @@ body {
     background-color: #f3f3f3;
     overflow-x: hidden;
   }
-.container-fluid{
+
+  .container-fluid{
     padding: 1rem 3rem;
 }
 
-.nav{
-    height: 5rem;
-    align-items: center;
-    font-weight: 400;
-    padding:0rem 5rem;
-    margin: 1rem 0rem;
+
+.navbar{
+    padding: 1.5rem 4.9rem;
+    background-color: #f3f3f3 !important;
+    box-shadow: none;
+
 }
+
+
 
 .logo{
     width: auto;
@@ -32,21 +35,24 @@ body {
 
 .nav-link,.nav-link:hover{
     color: black;
-    /* margin-left: 1.5rem; */
-    font-size: 3vh;
+    font-size: 1.05rem;
+    margin-left: 1.2rem;
+    font-weight: 400;
 } 
 
 .openAcc{
     border-radius: 1.5rem;
+    padding-left: 1.2rem!important;
+    padding-right: 1.2rem!important;
     background-color: #5ec576;
     margin-left: 1rem;
 }
 
 .sticky{
     position: fixed;
-    padding: 0rem 3rem;
-    background-color: rgba(255, 255, 255,0.95);
-    z-index: 9999;
+    padding: 1.2rem 3rem;
+    background-color: rgba(255, 255, 255,0.95) !important;
+    z-index: 9998;
    width: 100%;
    margin-top: 0;
    transition: background-color 1s;
@@ -71,6 +77,56 @@ section{
     line-height: 5rem;
 }
 
+.modal-content{
+    background-color: #f3f3f3;
+}
+.modal-header{
+    border-bottom: 0;
+}
+#exampleModalLongTitle{
+    font-size: 5vh;
+    padding: 5vh;
+    font-weight: bold;
+}
+
+.modalSbox{
+    position: relative;
+    display: block;
+    content: '';
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+    opacity: 0.9;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background-image:  linear-gradient(to top left, #39b385, #9be15d);
+}
+.modalForm {
+    margin: 1vh 7vh;
+}
+.modalForm .row {
+margin-bottom: 5vh;
+}
+.modalForm .row .col-sm-4{
+    padding-right: 0;
+}
+.modalForm label{
+    font-size: 3vh;
+    font-weight: 500;
+}
+.modalForm input{
+    float:right;
+    background-color: white;
+    border: none;
+    outline: none;
+    height: 7vh;
+    border-radius: 5%;
+}
+.modelOpenAcc,.modelOpenAcc:focus{
+    outline: none;
+    border: none;
+    margin-top: 5vh;
+    padding: 1vh 5vh !important;
+}
 .sbox {
     position: relative;
   }
@@ -436,4 +492,232 @@ hr{
     text-align: center;
     font-size: 0.8rem;
     opacity: 60%;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"MEDIA QUERIES"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>Extra-Extra Small Devices */
+@media(max-width:575px) {
+   body{
+       width: 100%;
+       overflow-x: hidden;
+   }
+   
+    .navbar{
+        padding: .7rem 1rem;
+    }
+    .sticky{
+        padding: .7rem 1rem;
+        
+    }
+    .logo{
+        height:2.3rem;
+    }
+    
+.nav-link,.nav-link:hover{
+    margin-left: 0.6rem;
+    font-size: 0.7rem;
+} 
+.openAcc{
+    text-align: center;
+}
+
+.container-fluid{
+ padding: 1rem;   
+}
+
+.msg h1{
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+}
+.msg p{
+    padding-top: 0.5rem;
+    font-size: 0.6rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+}
+
+.msg a,.msg a:hover{
+    font-size: 0.5rem;
+    padding-bottom: 0.05rem;
+    margin-left: 0rem;
+    }
+
+    hr{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    }
+    .locBox{
+        padding-top: 0rem;
+        margin-left: 10%;
+    }
+    
+    .locBox strong{
+        font-size: 0.6rem;
+    }
+    
+    .locBox h2{
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+    
+    .layers{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+
+    .tiles {
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .hs{
+        position: relative;
+        top: -35vh;
+    }
+    .ds{
+        position: relative;
+        bottom: -28vh;
+    }
+    
+    .ball{
+      border-radius: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    
+    .tiles strong{
+        font-size: 0.9rem;
+    }
+    .tiles p{
+        margin-top: 0.75rem;
+        font-size: 0.6rem;
+    }
+    
+
+    .belowTabbed{
+        margin-top: 10rem;
+    }
+    
+    .buttons{
+        text-align: center;
+    }
+    .btns{
+        border-radius: 1.5rem;
+        width: 5rem;
+        height: 1.5rem;
+        margin-left: 1rem;
+        font-size: 0.5rem;
+    }
+
+    .activeBtn{
+        top: -.8rem;
+        transition: top .25s;
+    }
+    
+    .info{
+        padding: 1rem 2rem 1rem 1rem;
+        margin-top: 0.7rem;
+        font-size: 0.4rem;
+    }
+    .info .col-10 strong{
+        font-size: 0.7rem;
+        line-height: 0.05rem;
+    }
+    
+    
+    .bigBall{
+      border-radius: 3.5rem; 
+      padding: 0.3rem;
+       margin-bottom: 1rem;
+       float: right;
+    
+    }
+    
+    .bigBall svg{
+        padding: 0rem;
+       height: 1rem;
+       width:1rem;
+    }
+
+    
+.quote .col-2{
+    font-size: 9rem;
+ }
+ .quote strong{
+     font-size: 0.9rem;
+     letter-spacing: 0.01rem;
+ }
+ .quote blockquote{
+     margin-top: 1rem;
+     font-size: 0.6rem;
+     margin-bottom: 1rem;
+ }
+ 
+ .quote img{
+     width: 2.5rem;
+     padding-left: 0rem;
+     margin-left: 0rem;
+ }
+ 
+ .quote h4{
+     margin-left: 1.2rem;
+   font-size: 0.5rem;
+ }
+ .quote .col-8 p{
+     margin-left: 1.2rem;
+     font-size: 0.4rem;
+     width: 5rem!important;
+ }
+ 
+ .arrBtn,.arrBtn:focus{
+     font-size: 0.9rem;
+    padding: 0rem 0.5rem;
+     top: -40vh;
+ }
+ 
+ .dots{
+     position: relative;
+     top: -12vh;
+ }
+ .dot,.dot:focus{
+     height: 6px;
+     width: 6px;
+ }
+
+
+ .footer .joinMsg h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 70%;
+   font-size: 0.8rem;
+   margin-bottom: 2rem;
+}
+.joinBtn a,.joinBtn a:hover{
+    width: 20%;
+    font-size: 0.6rem;
+    padding: 1rem 2rem;
+}
+
+
+.fhr{
+    margin-bottom: 2rem;
+}
+.flogo img{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.copy{
+    text-align: center;
+    font-size: 0.5rem;
+    opacity: 60%;
+}
+
 }

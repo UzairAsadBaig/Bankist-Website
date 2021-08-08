@@ -27,30 +27,79 @@
 <body>
 
 
-
-
-    <!-- Navbar -->
-    <nav class="nav ">
+    <!-- Nav tabs -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <img class="logo" src="img/logo.png" alt="NA">
-        <li class="nav-item ml-auto">
-            <a class="nav-link " href="#section1">Features</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#section2">Operations</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#section3">Testimonials</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link openAcc" href="#">Open accounts</a>
-        </li>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="my-nav" class="collapse navbar-collapse ">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="#section1">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#section2">Operations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#section3">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link openAcc " href="#" data-toggle="modal" data-target="#exampleModalCenter">Open
+                        accounts</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
+    <!-- Modal -->
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Open Your account in just <span
+                            class="modalSbox">5
+                            minutes</span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="modalForm">
+                        <div class="row ">
+                            <div class="col-sm-4"><label>First Name</label></div>
+                            <div class="col-sm-8">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-sm-4"> <label>Last Name</label></div>
+                            <div class="col-sm-8">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-sm-4"> <label>Email Address</label></div>
+                            <div class="col-sm-8">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="openAcc modelOpenAcc">Next step &rarr;</button>
+                        </div>
+                    </form>
+                </div>
 
-
-
+            </div>
+        </div>
+    </div>
 
 
     <!-- Jumbotron -->
@@ -90,10 +139,10 @@
             </div>
 
             <div class="row layers">
-                <div class="col-6 lzImg">
+                <div class="col-sm-6 lzImg">
                     <img src="img/digital-lazy.jpg" class="lazyImage" alt="NA">
                 </div>
-                <div class="col-6 tiles">
+                <div class="col-sm-6 tiles">
                     <div class="ball">
                         <svg>
                             <use xlink:href="img/icons.svg#icon-monitor"></use>
@@ -108,8 +157,8 @@
                 </div>
             </div>
 
-            <d iv class="row layers">
-                <div class="col-6 tiles">
+            <d iv class="row layers ">
+                <div class="col-sm-6 tiles ds">
                     <div class="ball">
                         <svg>
                             <use xlink:href="img/icons.svg#icon-trending-up"></use>
@@ -122,16 +171,16 @@
                         consequatur vel ex error tempora aut recusandae cupiditate!</p>
 
                 </div>
-                <div class="col-6 lzImg">
+                <div class="col-sm-6 lzImg hs">
                     <img src="img/grow-lazy.jpg" class="lazyImage" alt="NA">
                 </div>
             </d>
 
             <div class="row layers">
-                <div class="col-6 lzImg">
+                <div class="col-sm-6 lzImg">
                     <img src="img/card-lazy.jpg" class="lazyImage" alt="NA">
                 </div>
-                <div class="col-6 tiles">
+                <div class="col-sm-6 tiles">
                     <div class="ball">
                         <svg>
                             <use xlink:href="img/icons.svg#icon-credit-card"></use>
@@ -168,7 +217,7 @@
             <div class="row  justify-content-center">
 
 
-                <div class="col-sm-10 col-12 info info3 ">
+                <div class="col-sm-9 col-10 info info3 ">
                     <div class="row">
                         <div class="col-2">
                             <div class="bigBall ball3">
@@ -186,7 +235,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-10 col-12 info info2">
+                <div class="col-sm-9 col-10 info info2">
                     <div class="row">
                         <div class="col-2">
                             <div class="bigBall ball2">
@@ -205,7 +254,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-10 col-12 info info1 activeInfo">
+                <div class="col-sm-9 col-10 info info1 activeInfo">
                     <div class="row">
                         <div class="col-2">
                             <div class="bigBall ball1">
@@ -257,7 +306,7 @@
                         <strong>The last step to becoming a complete minimalist</strong>
                         <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et rem voluptatem
                             maiores,
-                            fugit voluptatum harum eos a aperiam quod ad ratione dolorum consequuntur accusantium veniam
+                            fugit voluptatum harum eos a aperiam quod uuntur accusantium veniam
                             accusamus fuga reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
                             minima.
                         </blockquote>
@@ -284,7 +333,7 @@
                         <strong>Best financial decision ever!</strong>
                         <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et rem voluptatem
                             maiores,
-                            fugit voluptatum harum eos a aperiam quod ad ratione dolorum consequuntur accusantium veniam
+                            fugit voluptatum harum eos a aperiam quod uuntur accusantium veniam
                             accusamus fuga reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
                             minima.
                         </blockquote>
@@ -311,7 +360,7 @@
                         <strong>Finally free from old-school banks</strong>
                         <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et rem voluptatem
                             maiores,
-                            fugit voluptatum harum eos a aperiam quod ad ratione dolorum consequuntur accusantium veniam
+                            fugit voluptatum harum eos a aperiam quod uuntur accusantium veniam
                             accusamus fuga reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
                             minima.
                         </blockquote>
@@ -360,7 +409,7 @@
                     <h1>The best day to join Bankist was one year ago. The second best is today!</h1>
                 </div>
                 <div class="col-12 joinBtn">
-                    <a href="#">Open your free account today!</a>
+                    <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Open your free account today!</a>
                 </div>
             </div>
 
